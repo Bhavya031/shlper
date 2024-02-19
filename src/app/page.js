@@ -3,7 +3,7 @@ const Home = () => {
   return (
       <div>
         <Navbar />
-        <video src="/BG.mp4 " autoPlay loop muted />
+        <video src="./BG.mp4 " autoPlay loop muted />
       </div>
     
   );
