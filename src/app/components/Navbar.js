@@ -1,18 +1,20 @@
 // components/Navbar.js
-import React from 'react';
-
+import React from "react";
+import "./components.css";
 const Navbar = () => {
   return (
-    <nav class="bg-white">
-    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
-        <a class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="Asset 3.svg" class="h-8" alt="Logo" />
+    <nav className="navstyle">
+      <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
+        <a className="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="https://raw.githubusercontent.com/Bhavya031/shlper/0d2e9d178319b0132f3832ffbda50602f0063408/public/Asset%203.svg"
+            className="h-8"
+            alt="Logo"
+          />
         </a>
-        <div class="flex items-center space-x-6 rtl:space-x-reverse">
-            <a href="#" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
-        </div>
-    </div>
-</nav>
+        <button className="NavText">Login</button>
+      </div>
+    </nav>
   );
 };
 

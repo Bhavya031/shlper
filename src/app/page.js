@@ -1,15 +1,11 @@
-import Image from "next/image";
-
-import Navbar from "./components/navbar";
-
+import Navbar from "./components/Navbar";
 const Home = () => {
   return (
-    <div>
-      <Navbar />
-      <main>
-        jdfgjgfgjhdjg
-      </main>
-    </div>
+      <div>
+        <Navbar />
+        <video src="/BG.mp4 " autoPlay loop muted />
+      </div>
+    
   );
 };
 
