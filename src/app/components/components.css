@@ -12,3 +12,9 @@
 .navstyle {
     border-bottom: solid #353333 1px
 };
+html {
+  font-family: var(--font-Questrial);
+}
+nav {
+  font-family: var(--font-Questrial);
+}

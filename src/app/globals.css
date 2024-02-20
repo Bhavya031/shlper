@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 html {
-  font-family: 'Questrial', sans-serif;
+  font-family: var(--font-Questrial);
+}
+nav {
+  font-family: var(--font-Questrial);
 }
