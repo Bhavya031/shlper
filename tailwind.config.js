@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {},
   },
+  darkMode: "class",
   plugins: [
     nextui({
       prefix: "nextui", // prefix for themes variables
@@ -21,11 +22,18 @@ module.exports = {
       themes: {
         light: {
           layout: {}, // light theme layout tokens
-          colors: {}, // light theme colors
+          colors: {
+            background: "#ffffff",
+            foreground: "#13151a",
+          }, // light theme colors
         },
         dark: {
           layout: {}, // dark theme layout tokens
-          colors: {}, // dark theme colors
+          colors: {
+            background: "#13151a",
+            foreground: "#ffffff",
+            lighter: "#1d1f27",
+          }, // dark theme colors
         },
         // ... custom themes
       },

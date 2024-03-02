@@ -12,13 +12,13 @@ const Navbar = async () => {
   console.log(session);
   if (session) {
     return (
-      <nav className="questrial-regular">
+      <nav className="questrial-regular dark text-foreground bg-background">
         <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4">
           <a
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img src="/Asset 3.svg" className="h-8" alt="Logo" />
+            <img src="/Shelper(dark theme).svg" className="h-8" alt="Logo" />
           </a>
           <div className="flex space-x-4">
             <Profile>{session.user.image}</Profile>

@@ -6,17 +6,20 @@ import {
   DropdownMenu,
   DropdownItem,
   Button,
-  Image,
+  Avatar,
 } from "@nextui-org/react";
+
 export default function Profile({ children }) {
   return (
-    <Dropdown>
+    <Dropdown className="questrial-regular dark text-foreground bg-background">
       <DropdownTrigger>
-        <Image src={children} className="h-8" alt="Logo"></Image>
+        <Avatar src={children}  alt="Logo"/>
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions">
         <DropdownItem key="new">Profile</DropdownItem>
-        <DropdownItem key="copy">Logout</DropdownItem>
+        <DropdownItem href="/api/auth/signout" color="danger">
+            Log Out
+          </DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );
