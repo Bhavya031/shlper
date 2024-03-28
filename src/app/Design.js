@@ -4,7 +4,6 @@ import Profile  from "./components/Element/Profile";
 // Authicatiion Section
 import { getServerSession } from "next-auth";
 import { AuthOptions, authOptions } from "./lib/nextAuth";
-
 export default async function App() {
     const session = await getServerSession();
     console.log(session);
@@ -44,5 +43,6 @@ export default async function App() {
         </NavbarItem>
     </NavbarContent>
     </Navbar>
+  
   );
 }
