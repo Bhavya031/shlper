@@ -5,8 +5,12 @@ import { Providers } from "./providers";
 import { Link } from "@nextui-org/link";
 import { getServerSession } from 'next-auth';
 import clsx from "clsx";
-import { SpeedInsights } from '@vercel/speed-insights/next';
-
+import { publicIp } from 'public-ip';
+(async () => {
+    console.log(await publicIp.v4());
+    //=> '46.5.21.123'
+})
+// If loading a variable font, you don't need to specify the font weight
 const QuestrialFont = Questrial({
   subsets: ['latin'],
   display: 'swap',
@@ -21,7 +25,6 @@ export default async function RootLayout({ children }) {
       <body className={QuestrialFont.className}>
         <Providers>
           {children}
-          <SpeedInsights />
         </Providers>
       </body>
     </html>
