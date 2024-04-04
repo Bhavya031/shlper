@@ -1,6 +1,6 @@
 import requests
 
-url = "https://api.runpod.ai/v2/bvcvg7we01985t/runsync"
+url = ""
 
 payload = {
     "input": {
@@ -26,7 +26,7 @@ payload = {
 headers = {
     "accept": "application/json",
     "content-type": "application/json",
-    "authorization": "WRLYKRSUCMOH12KK7OVULIV3O2LALHIK8VZJG1GX"
+    "authorization": ""
 }
 
 response = requests.post(url, json=payload, headers=headers)

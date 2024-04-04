@@ -1,6 +1,5 @@
 import '../../styles/globals.css'
 import { Questrial } from 'next/font/google'
-import { Metadata } from "next";
 import { Providers } from "./providers";
 import { Link } from "@nextui-org/link";
 import { getServerSession } from 'next-auth';

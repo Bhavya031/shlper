@@ -1,10 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-html {
-  font-family: var(--font-Questrial);
-}
-nav {
-  font-family: var(--font-Questrial);
-}

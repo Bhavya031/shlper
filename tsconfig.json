@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/NextUIProvider.js", "src/app/layout.js", "src/app/providers.tsx", "src/app/page.js", "src/app/components/SessionProviders.js"  ],
+, "src/app/NextUIProvider.js", "src/app/layout.js", "src/app/providers.tsx", "src/app/page.js", "src/app/components/SessionProviders.js", "src/app/api/chat/route.js"  ],
   "exclude": [
     "node_modules"
   ]

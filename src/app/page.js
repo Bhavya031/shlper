@@ -1,17 +1,21 @@
+import Navbar from "./navbar";
+import { AuthOptions, authOptions } from "./lib/nextAuth";
+import { getServerSession } from "next-auth";
+import HeroSection from "./HeroSection";
+const Home = async () => {
+  const session = await getServerSession();
 
-import Navbar from "./components/Navbar";
-import Design from "./Design";
-import serach from "./components/Element/serachbar";
-
-const Home = () => {
-  return (
-
+  return session ? (
+    <>
+      <Navbar />
+      <HeroSection> </HeroSection>
+    </>
+  ) : (
     <div>
-    <Design />
-    <serach />
+      <Navbar />
+      <video src={'Bg.mp4'} autoPlay loop style={{ height: "100%", width: "100%" }}/>
     </div>
-
   );
-};
 
+};
 export default Home;
