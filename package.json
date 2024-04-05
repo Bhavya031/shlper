@@ -29,8 +29,10 @@
     "react-dom": "^18",
     "react-youtube": "^10.1.0",
     "sonner": "^1.4.41",
+    "srt-parser-2": "^1.2.3",
     "stripe": "^14.23.0",
-    "vaul": "^0.9.0"
+    "vaul": "^0.9.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",

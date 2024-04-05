@@ -2,6 +2,7 @@ import Navbar from "./navbar";
 import { AuthOptions, authOptions } from "./lib/nextAuth";
 import { getServerSession } from "next-auth";
 import HeroSection from "./HeroSection";
+
 const Home = async () => {
   const session = await getServerSession();
 
