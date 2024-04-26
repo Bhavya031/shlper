@@ -15,7 +15,7 @@ const Home = async () => {
     <div>
       <Navbar />
       <video autoPlay muted loop style={{ height: "100%", width: "100%" }}>
-      <source src={'/BG/Bg.mp4'} type="video/mp4" />
+      <source src={'https://raw.githubusercontent.com/Bhavya031/shlper/main/public/BG/BG.mp4'} type="video/mp4" />
       </video>
     </div>
   );
