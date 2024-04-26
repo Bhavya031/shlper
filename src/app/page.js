@@ -14,7 +14,9 @@ const Home = async () => {
   ) : (
     <div>
       <Navbar />
-      <video src={'/Bg.mp4'} autoPlay muted loop style={{ height: "100%", width: "100%" }}/>
+      <video autoPlay muted loop style={{ height: "100%", width: "100%" }}>
+      <source src={'/Bg.mp4'} type="video/mp4" />
+      </video>
     </div>
   );
 
