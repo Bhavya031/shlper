@@ -6,11 +6,10 @@ import { Textarea } from "@nextui-org/react";
 import {Link} from "@nextui-org/react";
 import response from "../../../../../Python/response.json"
 export default function Youtubes({ params }) {
-  console.log(response["output"]["transcription"]);
   let srt= response["output"]["transcription"];
 
   return (
-    <div className="w-1/2 h-lvh">
+    <div className="w-1/2">
       <div className="p-4">
         <iframe
           src={"https://www.youtube.com/embed/" + params.youtubeid  + "?start="}
@@ -21,8 +20,9 @@ export default function Youtubes({ params }) {
         ></iframe>
       </div>
       <div className="p-4">
+
         <Textarea
-          isReadOnly
+          maxRows={18}
           label="Transcription"
           variant="bordered"
           labelPlacement="outside"
