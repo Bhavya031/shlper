@@ -7,12 +7,11 @@ export default function Searchbar() {
   const [searchValue, setSearchValue] = React.useState("");
 
   const handleSearch = () => {
-    console.log(handleYoutubeVideoChange(searchValue));
     window.location.href = `/youtube/${handleYoutubeVideoChange(searchValue)}`;
   };
 
   return (
-    <div className="w-[50%] h-[120px] rounded-2xl flex justify-center items-center shadow-lg">
+    <div className="w-[50%] h-[120px] rounded-2xl flex justify-center items-center">
       <Input
         size="lg"
         label="Search"

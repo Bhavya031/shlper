@@ -7,7 +7,6 @@ import { getServerSession } from "next-auth";
 import { AuthOptions, authOptions } from "./lib/nextAuth";
 export default async function App() {
     const session = await getServerSession();
-    console.log(session);
     return (
     <Navbar className="dark text-foreground bg-background" maxWidth ='2xl'isBordered='True' height='72px'>
       <NavbarBrand>

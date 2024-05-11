@@ -21,13 +21,6 @@ module.exports = {
       defaultExtendTheme: "light", // default theme to extend on custom themes
       layout: {}, // common layout tokens (applied to all themes)
       themes: {
-        light: {
-          layout: {}, // light theme layout tokens
-          colors: {
-            background: "#ffffff",
-            foreground: "#13151a",
-          }, // light theme colors
-        },
         dark: {
           layout: {}, // dark theme layout tokens
           colors: {

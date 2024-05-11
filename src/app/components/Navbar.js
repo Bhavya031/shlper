@@ -9,7 +9,6 @@ import { AuthOptions, authOptions } from "../lib/nextAuth";
 
 const Navbar = async () => {
   const session = await getServerSession();
-  console.log(session);
   if (session) {
     return (
       <nav className="questrial-regular dark text-foreground bg-background">
