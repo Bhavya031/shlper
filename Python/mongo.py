@@ -30,8 +30,8 @@ def retrive_data(id):
     try:
         client = MongoClient(os.getenv("MONGO_URI"))
 
-        database = client["Bhavya"]
-        collection = database["shlper"]
+        database = client[os.getenv("client")]
+        collection = database[os.getenv("database")]
 
         # Retrieving documents that match the query
         result = collection.find({"video_id": id})
@@ -41,6 +41,23 @@ def retrive_data(id):
             data.append(document)
 
         client.close()
-        return data[0]["text"]
+        return data
     except Exception as e:
         raise Exception("The following error occurred: ", e)
+def addData(list_of_dicts):
+    try:
+        client = MongoClient(os.getenv("MONGO_URI"))
+        
+        database = client[os.getenv("client")]
+        collection = database[os.getenv("database")]
+        print(list_of_dicts)
+        # start example code here
+        result = collection.insert_many(list_of_dicts)
+        print(result.acknowledged)
+        # end example code here
+
+        client.close()
+
+    except Exception as e:
+        raise Exception(
+            "The following error occurred: ", e)

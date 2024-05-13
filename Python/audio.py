@@ -1,5 +1,6 @@
 from huggingface_hub import hf_hub_download
 from whisper import load_model, transcribe
+import json
 
 
 def transcribed(filename, model_path , model):
@@ -22,5 +23,6 @@ def transcribed(filename, model_path , model):
             int(segment["end"] % 60),
             int((segment["end"] % 1) * 1000)
         )
-        output_str += "%d\n%s --> %s\n%s\n" % (i, start_time, end_time, segment["text"].strip())   
-    return [pred_out["text"], output_str]
+        output_str += "%d\n%s --> %s\n%s\n" % (i, start_time, end_time, segment["text"].strip())
+        pred_out.update({"timestamp":output_str})
+    return pred_out
