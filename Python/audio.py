@@ -2,12 +2,9 @@ from huggingface_hub import hf_hub_download
 from whisper import load_model, transcribe
 
 
-def transcribe(filename):
+def transcribed(filename, model_path , model):
     
-    model_path = hf_hub_download(repo_id="distil-whisper/distil-large-v3-openai", filename="model.bin")
-    model = load_model(model_path)
-    sample =filename
-    pred_out = transcribe(model, audio=sample, language="en", word_timestamps=True)
+    pred_out = transcribe(model, audio=filename, language="en", word_timestamps=True)
 
 
     output_str = ""
@@ -26,4 +23,4 @@ def transcribe(filename):
             int((segment["end"] % 1) * 1000)
         )
         output_str += "%d\n%s --> %s\n%s\n" % (i, start_time, end_time, segment["text"].strip())   
-    return {pred_out["text"], output_str}
+    return [pred_out["text"], output_str]

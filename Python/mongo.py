@@ -1,11 +1,9 @@
-import pymongo
 from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 def database_check(id):
-    
     try:
         client = MongoClient(os.getenv("MONGO_URI"))
 
