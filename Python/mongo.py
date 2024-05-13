@@ -15,14 +15,34 @@ def database_check(id):
         # start example code here
         result = collection.count_documents({"video_id": id})
         if result > 0:
-            print("true")
+            client.close()
+            return("true")
         else:
-            print("false")
+            client.close()
+            return("false")
         # end example code here
 
-        client.close()
 
     except Exception as e:
         raise Exception("The following error occurred: ", e)
 
-database_check("KbzGy3whpy0")
+def retrive_data(id):
+    data = []
+
+    try:
+        client = MongoClient(os.getenv("MONGO_URI"))
+
+        database = client["Bhavya"]
+        collection = database["shlper"]
+
+        # Retrieving documents that match the query
+        result = collection.find({"video_id": id})
+
+        # Iterating through the cursor to access documents
+        for document in result:
+            data.append(document)
+
+        client.close()
+        return data[0]["text"]
+    except Exception as e:
+        raise Exception("The following error occurred: ", e)
