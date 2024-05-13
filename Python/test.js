@@ -11,7 +11,7 @@ async function getDataFromAPI(url) {
 }
 
 // Example usage
-const url = 'https://youtu.be/KbzGy3whpy0';
+const url = 'https://youtu.be/42iQKuQodW4';
 getDataFromAPI(url)
     .then(data => {
         console.log('Data:', data[0]["text"]);

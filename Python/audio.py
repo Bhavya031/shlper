@@ -3,7 +3,7 @@ from whisper import load_model, transcribe
 import json
 
 
-def transcribed(filename, model_path , model):
+def transcribed(filename, model_path , model, video_id):
     
     pred_out = transcribe(model, audio=filename, language="en", word_timestamps=True)
 
@@ -25,4 +25,5 @@ def transcribed(filename, model_path , model):
         )
         output_str += "%d\n%s --> %s\n%s\n" % (i, start_time, end_time, segment["text"].strip())
         pred_out.update({"timestamp":output_str})
+        pred_out.update({"video_id":video_id})
     return pred_out
