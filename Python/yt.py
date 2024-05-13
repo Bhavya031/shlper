@@ -25,3 +25,6 @@ def download_video(URLS):
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         error_code = ydl.download(URLS)
+        info = ydl.extract_info(URLS)
+        filename = "audio/" + info["title"] + " [" + info["id"] + "].m4a"
+    return filename
