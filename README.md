@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Interactive YouTube Video Project
 
-## Getting Started
+## Overview
 
-First, run the development server:
+This is my college project, developed over a period of two weeks for a mini-project assignment. The project was built during class sessions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Goal
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The objective of this project is to create a website that allows users to interact with YouTube videos using a local machine.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Achievements
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Developed a working website that interacts with YouTube videos using local language models (LLMs) and a local machine.
+- Despite the slow response times, the interaction functionality is operational.
 
-## Learn More
+## Note
 
-To learn more about Next.js, take a look at the following resources:
+- APIs are currently not functional. I will update the APIs and documentation as soon as I have the time.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Working Video
+Here is a video demonstrating the project's functionality:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+https://github.com/Bhavya031/shlper/assets/98141026/0c27ba0a-763f-423e-b961-c01407f6c7bf
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
